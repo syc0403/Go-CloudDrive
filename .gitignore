@@ -17,3 +17,5 @@
 .idea/
 .vscode/
 log/
+# 上传的文件
+tmp/
