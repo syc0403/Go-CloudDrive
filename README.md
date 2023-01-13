@@ -11,7 +11,7 @@
 
 ### 进度情况
 
-* [ ] 简单的文件上传服务
+* [x] 简单的文件上传服务
 * [ ] mysql存储文件元数据
 * [ ] 账号系统, 注册/登录/查询用户或文件数据
 * [ ] 基于帐号的文件操作接口
@@ -26,7 +26,7 @@
 ### 参考项目
 
 - yddeng：[fileCloud](https://github.com/yddeng/filecloud)
-- blankjee：[file-storage-system](https://github.com/yddeng/filecloud)
+- blankjee：[file-storage-system](https://github.com/blankjee/file-storage-system)
 ### 参考资料
 
 - Go入门: [语言之旅](https://tour.go-zh.org/welcome/1)
