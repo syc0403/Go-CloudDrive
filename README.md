@@ -7,7 +7,7 @@
 
 * [x] 简单的文件上传服务
 * [x] mysql存储文件元数据
-* [ ] 账号系统, 注册/登录/查询用户或文件数据
+* [x] 账号系统, 注册/登录/查询用户或文件数据
 * [ ] 基于帐号的文件操作接口
 * [ ] 文件秒传功能
 * [ ] 文件分块上传/断点续传功能
@@ -41,3 +41,5 @@ docker exec -it mysql-slave bash
 [docker安装MySQL并实现主从复制](https://blog.csdn.net/wyg1973017714/article/details/112601802?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522167367945516800186532263%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=167367945516800186532263&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-112601802-null-null.142^v71^one_line,201^v4^add_ask&utm_term=dockermysql%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6&spm=1018.2226.3001.4187)
 
 [MySQL主从同步show master status; Empty set (0.01 sec)主库无master状态问题解决](https://blog.csdn.net/lucky_ykcul/article/details/102809957)
+
+[http跳转自定义页面出现404错误，解决静态资源路径配置问题](https://blog.csdn.net/phenomenon_ting/article/details/105475165)
