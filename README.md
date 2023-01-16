@@ -8,9 +8,9 @@
 * [x] 简单的文件上传服务
 * [x] mysql存储文件元数据
 * [x] 账号系统, 注册/登录/查询用户或文件数据
-* [ ] 基于帐号的文件操作接口
-* [ ] 文件秒传功能
-* [ ] 文件分块上传/断点续传功能
+* [x] 基于帐号的文件操作接口
+* [x] 文件秒传功能
+* [x] 文件分块上传/断点续传功能
 * [ ] 搭建及使用Ceph对象存储集群
 * [ ] 使用阿里云OSS对象存储服务
 * [ ] 使用RabbitMQ实现异步任务队列
@@ -43,3 +43,5 @@ docker exec -it mysql-slave bash
 [MySQL主从同步show master status; Empty set (0.01 sec)主库无master状态问题解决](https://blog.csdn.net/lucky_ykcul/article/details/102809957)
 
 [http跳转自定义页面出现404错误，解决静态资源路径配置问题](https://blog.csdn.net/phenomenon_ting/article/details/105475165)
+
+[史上最详细Docker安装Redis （含每一步的图解）实战](https://blog.csdn.net/weixin_45821811/article/details/116211724)
