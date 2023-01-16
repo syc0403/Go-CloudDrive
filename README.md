@@ -11,11 +11,13 @@
 * [x] 基于帐号的文件操作接口
 * [x] 文件秒传功能
 * [x] 文件分块上传/断点续传功能
-* [ ] 搭建及使用Ceph对象存储集群
-* [ ] 使用阿里云OSS对象存储服务
+* [x] 使用阿里云OSS对象存储服务
 * [ ] 使用RabbitMQ实现异步任务队列
 * [ ] 微服务化(API网关, 服务注册, RPC通讯)
 * [ ] CI/CD(持续集成)
+
+### 服务架构
+![structure.png](doc%2Fstructure.png)
 
 ### 参考项目
 
@@ -33,11 +35,6 @@
 - k8s: [中文社区](https://www.kubernetes.org.cn/docs)
 
 ### 一些问题
-```shell
-sudo docker container run -p 3307:3306 --name mysql-master -v /home/mysql/master.cnf:/etc/mysql/conf.d/master.cnf -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7
-
-docker exec -it mysql-slave bash
-```
 [docker安装MySQL并实现主从复制](https://blog.csdn.net/wyg1973017714/article/details/112601802?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522167367945516800186532263%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=167367945516800186532263&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-112601802-null-null.142^v71^one_line,201^v4^add_ask&utm_term=dockermysql%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6&spm=1018.2226.3001.4187)
 
 [MySQL主从同步show master status; Empty set (0.01 sec)主库无master状态问题解决](https://blog.csdn.net/lucky_ykcul/article/details/102809957)
@@ -45,3 +42,5 @@ docker exec -it mysql-slave bash
 [http跳转自定义页面出现404错误，解决静态资源路径配置问题](https://blog.csdn.net/phenomenon_ting/article/details/105475165)
 
 [史上最详细Docker安装Redis （含每一步的图解）实战](https://blog.csdn.net/weixin_45821811/article/details/116211724)
+
+[Centos 7 docker搭建RabbitMQ](https://blog.csdn.net/Shuaidede/article/details/125298487?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522167389057616800211556807%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=167389057616800211556807&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-2-125298487-null-null.142^v71^one_line,201^v4^add_ask&utm_term=centos%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85rabbitmq&spm=1018.2226.3001.4187)
