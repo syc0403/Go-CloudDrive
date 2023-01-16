@@ -67,6 +67,17 @@ func UploadHandler(w http.ResponseWriter, r *http.Request) {
 
 		newFile.Seek(0, 0)
 		fileMeta.FileSha1 = util.FileSha1(newFile)
+
+		//ossPath := "oss/" + fileMeta.FileSha1
+		//fmt.Println(ossPath)
+		//err = oss.Bucket().PutObject(ossPath, newFile)
+		//if err != nil {
+		//	fmt.Println(err.Error())
+		//	w.Write([]byte("Upload failed!"))
+		//	return
+		//}
+		//fileMeta.Location = ossPath
+
 		_ = meta.UpdateFileMetaDB(fileMeta)
 
 		r.ParseForm()
