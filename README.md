@@ -12,12 +12,13 @@
 * [x] 文件秒传功能
 * [x] 文件分块上传/断点续传功能
 * [x] 使用阿里云OSS对象存储服务
-* [ ] 使用RabbitMQ实现异步任务队列
+* [x] 使用RabbitMQ实现异步任务队列
 * [ ] 微服务化(API网关, 服务注册, RPC通讯)
 * [ ] CI/CD(持续集成)
 
 ### 服务架构
-![structure.png](doc%2Fstructure.png)
+
+![](doc/structure.png)
 
 ### 参考项目
 
