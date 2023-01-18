@@ -1,7 +1,9 @@
 package main
 
 import (
+	cfg "Go-CloudDrive/config"
 	"Go-CloudDrive/handler"
+	"Go-CloudDrive/route"
 	"fmt"
 	"net/http"
 )
@@ -37,9 +39,10 @@ func main() {
 		handler.HTTPInterceptor(handler.CompleteUploadHandler))
 
 	//用户相关接口
-	http.HandleFunc("/user/signup", handler.SignupHandler)
-	http.HandleFunc("/user/signin", handler.SignInHandler)
 	http.HandleFunc("/user/info", handler.HTTPInterceptor(handler.UserInfoHandler))
+
+	router := route.Router()
+	router.Run(cfg.UploadServiceHost)
 
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {

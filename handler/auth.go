@@ -1,6 +1,10 @@
 package handler
 
-import "net/http"
+import (
+	"Go-CloudDrive/util"
+	"github.com/gin-gonic/gin"
+	"net/http"
+)
 
 /**
 * @Description
@@ -23,4 +27,25 @@ func HTTPInterceptor(h http.HandlerFunc) http.HandlerFunc {
 			}
 			h(w, r)
 		})
+}
+
+// DoHTTPInterceptor  : http请求拦截器
+func DoHTTPInterceptor() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		username := c.Request.FormValue("username")
+		token := c.Request.FormValue("token")
+
+		//验证登录token是否有效
+		if len(username) < 3 || !IsTokenValid(token) {
+			c.Abort()
+			resp := util.NewRespMsg(
+				502,
+				"token无效",
+				nil,
+			)
+			c.JSON(http.StatusOK, resp)
+			return
+		}
+		c.Next()
+	}
 }
